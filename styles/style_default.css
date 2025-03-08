@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: 'PokemonFontHollow';
+    src: url('/fonts/Pokemon\ Hollow.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PokemonFontSolid';
+    src: url('/fonts/Pokemon\ Solid.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* font-family: "Roboto", serif; */
+/* font-family: "PokemonFontHollow", serif; */
+/* font-family: "PokemonFontSolid", serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.ts-navbar-logo {
+    background-image: url(/images/PokemonLogo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    width: 100px;
+    height: 50PX;
+}
+
+.nav-link {
+    font-family: "Roboto", serif;
+}

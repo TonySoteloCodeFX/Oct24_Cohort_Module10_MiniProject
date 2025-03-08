@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+}
+
+.ts-left-side {
+    height: 100vh;
+    background-image: url("../images/PikachuBackgroundImage.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.ts-right-side {
+    background-color: #FFDA27;
+}
+
+.hero-image {
+    height: 50vh;
+    width: 100%;
+    background-image: url("../images/PokemonLogo.png");
+    background-size: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.ts-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ts-hero-button, .ts-hero-text {
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+.ts-hero-button {
+    background-color: rgb(3, 110, 250);
+    border-radius: 20px;
+    color: aliceblue;
+    width: 300px;
+    font-weight: 900;
+    line-height: 35px;
+    transition: 0.3s;
+    position: relative;
+    bottom: 50px;
+}
+
+.ts-hero-button:hover {
+    background-color: aliceblue;
+}
+
+.ts-hero-text {
+    font-weight: 500;
+    position: relative;
+    bottom: 50px;
+}
+
+a.nav-link {
+    transition: 0.03s;
+}
+
+a.nav-link:hover {
+    color: rgb(3, 110, 250);
+    font-weight: 900;
+}
+
