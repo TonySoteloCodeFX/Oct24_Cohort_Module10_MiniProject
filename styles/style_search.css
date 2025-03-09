@@ -18,7 +18,7 @@ body {
 }
 
 .ts-right-side {
-    background-color: #197ca0;
+    background: radial-gradient(circle, #00ffff, #0b5a77);
 }
 
 .hero-card {
@@ -28,7 +28,7 @@ body {
     border: 10px solid #FFDA27;
     border-radius: 15px;
     box-shadow: 0px 23px 27px;
-    background-color: rgb(248, 100, 100);
+    background: radial-gradient(circle, rgb(248, 100, 100), #770b0b);
     display: flex;
     flex-direction: column;
 }
@@ -84,6 +84,12 @@ a.nav-link:hover {
     margin: auto;
     background-color: #197ca0;
     color: aliceblue;
+    transition: 0.3s;
+}
+
+.form-button:hover {
+    background-color: #FFDA27;
+    box-shadow: 0px 3px 7px;
 }
 
 .pokemon-info {

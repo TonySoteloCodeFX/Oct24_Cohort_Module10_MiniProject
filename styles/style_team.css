@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+}
+
+.ts-left-side {
+    height: 100vh;
+    background-image: url("../images/A_Group_Of_Pokemon.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.ts-right-side {
+    background: radial-gradient(circle, #fcee25, #cb2711);
+}
+
+.ts-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ts-hero-text {
+    margin: 50px;
+    font-size: 30px;
+    font-weight: 500;
+    color: aliceblue;
+}
+
+a.nav-link {
+    transition: 0.03s;
+}
+
+a.nav-link:hover {
+    color: rgb(3, 110, 250);
+    font-weight: 900;
+}

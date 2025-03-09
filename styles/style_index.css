@@ -19,6 +19,7 @@ body {
 
 .ts-right-side {
     background-color: #FFDA27;
+    background: radial-gradient(circle, #ffee9b, #ffda27);
 }
 
 .hero-image {
