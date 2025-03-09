@@ -22,10 +22,9 @@ document.addEventListener("DOMContentLoaded", function () {
         if (!pokemonData) return;
 
         const pokemonImageContainer = document.getElementById("newPokemon-image");
+        const pokemonDetails = document.getElementById("pokemon-info");
 
-        
         pokemonImageContainer.innerHTML = "";
-
     
         const pokemonImage = document.createElement("img");
         pokemonImage.src = pokemonData.sprites.front_default;
@@ -33,10 +32,14 @@ document.addEventListener("DOMContentLoaded", function () {
         pokemonImage.style.width = "200px";
         pokemonImage.style.height = "200px";
         pokemonImage.style.display = "block"; 
+        pokemonImage.style.margin = "auto";
+
+        pokemonDetails.innerHTML = `
+        <h3 class="ability">ABILITIES</h3>
+        <ul class="ability-list">
+            ${pokemonData.abilities.map(ability => `<li>${ability.ability.name}</li>`).join('')}
+        </ul>`;
 
         pokemonImageContainer.appendChild(pokemonImage);
-
-        console.log(`Pokemon: ${pokemonData.name}`);
-        console.table(pokemonData.abilities.map(ability => ability.ability.name));
     });
 });

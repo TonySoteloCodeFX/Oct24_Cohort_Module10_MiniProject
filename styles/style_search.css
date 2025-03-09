@@ -95,3 +95,15 @@ a.nav-link:hover {
 .pokemon-info {
     text-align: center;
 }
+
+.ability-list {
+    list-style: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: antiquewhite;
+}
+
+.ability {
+    color: antiquewhite;
+    text-decoration: underline;
+}
